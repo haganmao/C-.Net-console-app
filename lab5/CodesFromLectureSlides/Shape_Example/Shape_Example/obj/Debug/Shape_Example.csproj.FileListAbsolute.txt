@@ -1,0 +1,6 @@
+c:\users\manish\documents\visual studio 2015\Projects\Shape_Example\Shape_Example\bin\Debug\Shape_Example.exe.config
+c:\users\manish\documents\visual studio 2015\Projects\Shape_Example\Shape_Example\bin\Debug\Shape_Example.exe
+c:\users\manish\documents\visual studio 2015\Projects\Shape_Example\Shape_Example\bin\Debug\Shape_Example.pdb
+c:\users\manish\documents\visual studio 2015\Projects\Shape_Example\Shape_Example\obj\Debug\Shape_Example.exe
+c:\users\manish\documents\visual studio 2015\Projects\Shape_Example\Shape_Example\obj\Debug\Shape_Example.pdb
+c:\users\manish\documents\visual studio 2015\Projects\Shape_Example\Shape_Example\obj\Debug\Shape_Example.csprojResolveAssemblyReference.cache
