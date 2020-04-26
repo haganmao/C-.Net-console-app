@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-CardGame_Mao",
+      "appliesTo": "CardGame_Mao.sln",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-Program",
+      "appliesTo": "CardGame_Mao/Program.cs",
+      "type": "launch"
+    }
+  ]
+}
