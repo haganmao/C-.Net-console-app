@@ -7,12 +7,11 @@ namespace CardGame_Mao
     class Deck : Card
     {
 
-        //存放54张带花色的牌的列表
+        //all card list for 52 cards  
         public List<Deck> allCard = new List<Deck>();
 
         public Deck()
         {
-
         }
 
         public Deck(suit cs, rank cv) : base(cs, cv)
@@ -20,7 +19,7 @@ namespace CardGame_Mao
 
         }
 
-        //生成牌组，52张牌
+        //Create One Deck
         public List<Deck> createDeck()
         {
             for (int i = 0; i < 4; i++)
@@ -33,15 +32,15 @@ namespace CardGame_Mao
             return allCard;
         }
 
-        //洗牌，随机生成下标，交换位置
+        //Shuffle deck，Random index，swap position
         public void shuffle()
         {
             Random random = new Random();
             for (int i = allCard.Count - 1; i > 0; i--)
             {
-                //随机下标
+                //get random index
                 int index = random.Next(0, i);
-                //随机出来的数与最后位置的数交换
+                //swap
                 Deck temp = allCard[i];
                 allCard[i] = allCard[index];
                 allCard[index] = temp;

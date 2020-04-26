@@ -24,6 +24,8 @@ namespace CardGame_Mao
             tCard = cardS;
         }
 
+
+
         //property
         public String setPlayerName
         {
@@ -47,10 +49,6 @@ namespace CardGame_Mao
         {
             get { return houseName; }
         }
-
-        //method         
-
-
 
     }
 }

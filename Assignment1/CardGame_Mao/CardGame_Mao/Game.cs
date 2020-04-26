@@ -6,17 +6,9 @@ namespace CardGame_Mao
 {
     class Game : Card
     {
-
-        public bool isPlayerWin;
-        public bool isHouseWin;
-        public bool isVisiable;
         public String playerName;
 
-        //数组记录玩牌人数最多为7
         public int playerNumbers;
-        public int totalCardValue;
-        public char str;
-
         public String temp;
 
         public bool isHouse;
@@ -24,8 +16,6 @@ namespace CardGame_Mao
         public int totalScore;
         public List<Card> totalCard = new List<Card>();
         public List<Game> players = new List<Game>();
-
-
 
 
         //default constructor
@@ -41,12 +31,11 @@ namespace CardGame_Mao
             totalScore = tScore;
             isHouse = isH;
         }
+
+
+
         //Methods
-
-
-
-        public String getPlayerName { get { return playerName; } }
-        //开始游戏
+        //Start Game
         public void startGame(int totalPlayerNumber)
         {
             int[] cardScores = new int[13] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 };
@@ -122,7 +111,7 @@ namespace CardGame_Mao
             } while (true);
         }
 
-        //发起始牌两张
+        //deal one card
         public Card dealCard()
         {
             Random random = new Random(Guid.NewGuid().GetHashCode());
@@ -136,31 +125,19 @@ namespace CardGame_Mao
             deck.shuffle();
 
 
-            //随机生成下标
+            //Random get index
             int cardIndexOne = random.Next(0, deck.allCard.Count);
 
-            //实例化第一张随机牌
+            //Create an new card
             Card cardOne = new Card
             {
                 cardShape = deck.allCard[cardIndexOne].cardShape,
                 cardValue = deck.allCard[cardIndexOne].cardValue
             };
 
-            //删除卡组的这张牌
+            //remove the card in order to get same value card at short time.
             deck.allCard.RemoveAt(cardIndexOne);
             return cardOne;
-        }
-
-
-        //翻庄家数值为10的牌
-        public void flipOneCard()
-        {
-            //if 庄家牌面值==10
-            //isVisable = True
-
-            //else
-            //isVisable = False
-
         }
 
     }

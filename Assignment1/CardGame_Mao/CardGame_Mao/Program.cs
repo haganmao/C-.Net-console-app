@@ -16,11 +16,6 @@ namespace CardGame_Mao
 
             do
             {
-
-
-                Player player = new Player();
-                Card card = new Card();
-                Deck deckA = new Deck();
                 Game game = new Game();
 
                 Console.Write("Welcome to Blackjack");
