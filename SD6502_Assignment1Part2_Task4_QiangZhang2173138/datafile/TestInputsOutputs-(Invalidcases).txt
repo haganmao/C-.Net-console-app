@@ -1,0 +1,37 @@
+Inputs :
+hello
+ Wv-S.X7nteQuUrVkkVw@[57.85.197.138]
+x.yNFbqGBX@x.BxmqgxD2sYmqt.co.nz
+7d.nBfg@[195 .232.96.198]
+4FDiPA..Ri@cbJhBtA.OGp7F4nsUqL.com
+.OU1h6.hUPct7C.vj9D@Q.p.kFyt.com.au
+kh.1Q.v9j1@F.SaIdV236msOw.co.us.
+8.5OaQ.1_at_.JG1.IC.S.5Eo2Oj7WSP_dot_com
+inBEeWrXmx.TrWRQ1._at_K.F.Q251s5.6.4I_dot_com.au
+GXnlPcVJHzCLBk.-SMb4@s0nnA.com
+ay3g_Xo_.Cx_D2_gr0Y@[202.137.99.255]
+3-8oLFMiO-xolm--ZHe_at_uc.SjpmnmUcKB_dot_com.au
+LZM_VX_FWYtX82KP.mZV.i7cX.WF.X.C.ch.com.au
+17HE_fVQHcL_Jv.I8.hX@rP37BU1H@Ygc.com.au
+w.Wt.F7mUfzx2m&Sts3@2XzVGukHhrdhuCqdeM.com.au
+n.T.wVY@5TMHpxoAqL.co.nz*
+LEKN.S5DcO7#c7@AabLIDP12.co.uk
+
+Corresponding output:
+hello <- not an email address
+ Wv-S.X7nteQuUrVkkVw@[57.85.197.138] <- leading space
+x.yNFbqGBX@x.BxmqgxD2sYmqt.co.nz <- trailing space
+7d.nBfg@[195 .232.96.198] <- internal space
+4FDiPA..Ri@cbJhBtA.OGp7F4nsUqL.com <- double dot
+.OU1h6.hUPct7C.vj9D@Q.p.kFyt.com.au <- leading dot
+kh.1Q.v9j1@F.SaIdV236msOw.co.us. <- trailing dot
+8.5OaQ.1_at_.JG1.IC.S.5Eo2Oj7WSP_dot_com <- part begins with dot
+inBEeWrXmx.TrWRQ1._at_K.F.Q251s5.6.4I_dot_com.au <- part ends with dot
+GXnlPcVJHzCLBk.-SMb4@s0nnA.com <- part begins with separator
+ay3g_Xo_.Cx_D2_gr0Y@[202.137.99.255] <- part ends with separator
+3-8oLFMiO-xolm--ZHe_at_uc.SjpmnmUcKB_dot_com.au <- double separator
+LZM_VX_FWYtX82KP.mZV.i7cX.WF.X.C.ch.com.au <- no @ symbol
+17HE_fVQHcL_Jv.I8.hX@rP37BU1H@Ygc.com.au <- multiple @ symbols
+w.Wt.F7mUfzx2m&Sts3@2XzVGukHhrdhuCqdeM.com.au <- invalid character in middle
+n.T.wVY@5TMHpxoAqL.co.nz* <- invalid character at end
+LEKN.S5DcO7#c7@AabLIDP12.co.uk <- invalid character in middle (replacement)
