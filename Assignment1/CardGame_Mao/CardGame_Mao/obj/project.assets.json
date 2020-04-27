@@ -688,24 +688,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Meng\\.nuget\\packages\\": {},
+    "C:\\Users\\qiang\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD:Assignment1/CardGame/obj/project.assets.json
+      "projectUniqueName": "C:\\Users\\qiang\\Desktop\\Git\\C--Lab-Tasks\\Assignment1\\CardGame\\CardGame.csproj",
+      "projectName": "CardGame",
+      "projectPath": "C:\\Users\\qiang\\Desktop\\Git\\C--Lab-Tasks\\Assignment1\\CardGame\\CardGame.csproj",
+      "packagesPath": "C:\\Users\\qiang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\qiang\\Desktop\\Git\\C--Lab-Tasks\\Assignment1\\CardGame\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\Meng\\Desktop\\C#LabTask\\Assignment1\\CardGame_Mao\\CardGame_Mao\\CardGame_Mao.csproj",
       "projectName": "CardGame_Mao",
       "projectPath": "C:\\Users\\Meng\\Desktop\\C#LabTask\\Assignment1\\CardGame_Mao\\CardGame_Mao\\CardGame_Mao.csproj",
       "packagesPath": "C:\\Users\\Meng\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Meng\\Desktop\\C#LabTask\\Assignment1\\CardGame_Mao\\CardGame_Mao\\obj\\",
+>>>>>>> ec1fbf05a627e04d4ed4f5279bfaec251b2755f4:Assignment1/CardGame_Mao/CardGame_Mao/obj/project.assets.json
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Meng\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\qiang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
