@@ -78,7 +78,7 @@ namespace CardGame_Mao
                 }
 
                 Player house = new Player();
-                house.setPlayerName = "House";
+                house.setPlayerName = house.houseName;
                 house.setPlayernumber = totalPlayerNumber + 1;
                 var cardsHouse = house.dealCard();
                 house.totalCard.Add(cardsHouse);

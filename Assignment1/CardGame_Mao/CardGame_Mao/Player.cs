@@ -12,7 +12,6 @@ namespace CardGame_Mao
         public List<Card> tCard = new List<Card>();
 
 
-
         //default constructor
         public Player() { }
 
@@ -22,7 +21,6 @@ namespace CardGame_Mao
         {
             tCard = cardS;
         }
-
 
 
         //property
@@ -48,6 +46,5 @@ namespace CardGame_Mao
         {
             get { return houseName; }
         }
-
     }
 }
