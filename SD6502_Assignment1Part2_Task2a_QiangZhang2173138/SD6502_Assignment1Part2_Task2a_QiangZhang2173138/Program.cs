@@ -16,10 +16,13 @@ namespace SD6502_Assignment1Part2_Task2a_QiangZhang2173138
             var firstname = new List<string>();
             var lastname = new List<string>();
             var email = new List<string>();
-            var path = @"D:\Studying T1 2020\SD6502 Programming II\Assignment1\SD6502_Assignment1Part2_Task2a_QiangZhang2173138\datafile\unsorted_data.csv";
+            string csvfile = Environment.CurrentDirectory;
+            var getpath = Directory.GetParent(csvfile).Parent.FullName;
+            var path = getpath+@"\datafile\unsorted_data.csv";
 
             if (!File.Exists(path))
             {
+                Console.WriteLine(path);
                 Console.WriteLine("File not found, Check path");
                 Console.ReadLine();
             }

@@ -20,3 +20,14 @@ C:\Users\Meng\Desktop\C#LabTask\Assignment1\CardGame\obj\Debug\netcoreapp2.1\Car
 C:\Users\Meng\Desktop\C#LabTask\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.AssemblyInfo.cs
 C:\Users\Meng\Desktop\C#LabTask\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.dll
 C:\Users\Meng\Desktop\C#LabTask\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.pdb
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\bin\Debug\netcoreapp2.1\CardGame.deps.json
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\bin\Debug\netcoreapp2.1\CardGame.runtimeconfig.json
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\bin\Debug\netcoreapp2.1\CardGame.runtimeconfig.dev.json
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\bin\Debug\netcoreapp2.1\CardGame.dll
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\bin\Debug\netcoreapp2.1\CardGame.pdb
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.csprojAssemblyReference.cache
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.csproj.CoreCompileInputs.cache
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.AssemblyInfoInputs.cache
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.AssemblyInfo.cs
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.dll
+C:\Users\qiang\Desktop\Git\C--Lab-Tasks\Assignment1\CardGame\obj\Debug\netcoreapp2.1\CardGame.pdb

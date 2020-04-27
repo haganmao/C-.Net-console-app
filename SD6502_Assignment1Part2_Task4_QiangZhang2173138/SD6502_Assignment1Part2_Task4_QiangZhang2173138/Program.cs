@@ -12,8 +12,10 @@ namespace SD6502_Assignment1Part2_Task4_QiangZhang2173138
     {
         static void Main(string[] args)
         {
-            var validcasespath = @" D:\Studying T1 2020\SD6502 Programming II\Assignment1\SD6502_Assignment1Part2_Task4_QiangZhang2173138\datafile\TestInputsOutputs-(validcases).txt";
-            var invalidcasespath = @"D:\Studying T1 2020\SD6502 Programming II\Assignment1\SD6502_Assignment1Part2_Task4_QiangZhang2173138\datafile\TestInputsOutputs-(Invalidcases).txt";
+            string csvfile = Environment.CurrentDirectory;
+            var path = Directory.GetParent(csvfile).Parent.FullName;
+            var validcasespath = path+@"\datafile\TestInputsOutputs-(validcases).txt";
+            var invalidcasespath = path + @"\datafile\TestInputsOutputs-(Invalidcases).txt";
 
 
             while (true)
