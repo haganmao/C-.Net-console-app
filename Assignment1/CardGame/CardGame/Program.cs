@@ -96,7 +96,7 @@ namespace CardGame
 
                                 foreach (var c in item.totalCard)
                                 {
-                                    Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " -> ");
+                                    Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
                                 }
                                 Console.Write(" -> " + item.totalScore);
                                 Console.WriteLine();
@@ -135,9 +135,9 @@ namespace CardGame
                             Console.Write(item.playerName + ": ");
                             foreach (var c in item.totalCard)
                             {
-                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " -> ");
+                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
                             }
-                            Console.Write(item.totalScore);
+                            Console.Write(" -> "+item.totalScore);
                             houseScores = item.totalScore;
                             t = 1;
                             if (item.totalScore > 21)
@@ -157,7 +157,7 @@ namespace CardGame
                             Console.Write(item.playerName + ": ");
                             foreach (var c in item.totalCard)
                             {
-                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " -> ");
+                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
                             }
                             Console.Write(" -> " + item.totalScore);
                             Console.WriteLine();
