@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CardGame_Mao
 {
-    class Game : Card
+    class Game : Deck
     {
         public String playerName;
 
@@ -39,14 +39,6 @@ namespace CardGame_Mao
         public void startGame(int totalPlayerNumber)
         {
             int[] cardScores = new int[13] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 };
-
-
-            // foreach(Card c in GetHand()) {
-            //     if (c.GetValue() != Card.Value.Hidden)
-            //     {
-            //         score += cardScores[(int)c.GetValue()];
-            //     }
-            // }
 
             do
             {
@@ -86,7 +78,7 @@ namespace CardGame_Mao
                 }
 
                 Player house = new Player();
-                house.setPlayerName = "house";
+                house.setPlayerName = "House";
                 house.setPlayernumber = totalPlayerNumber + 1;
                 var cardsHouse = house.dealCard();
                 house.totalCard.Add(cardsHouse);
@@ -111,34 +103,6 @@ namespace CardGame_Mao
             } while (true);
         }
 
-        //deal one card
-        public Card dealCard()
-        {
-            Random random = new Random(Guid.NewGuid().GetHashCode());
-            Deck deck = new Deck();
-
-            deck.createDeck();
-            // foreach (var item in a)
-            // {
-            //     Console.WriteLine(item.cardShape + " - " + item.cardValue);
-            // }
-            deck.shuffle();
-
-
-            //Random get index
-            int cardIndexOne = random.Next(0, deck.allCard.Count);
-
-            //Create an new card
-            Card cardOne = new Card
-            {
-                cardShape = deck.allCard[cardIndexOne].cardShape,
-                cardValue = deck.allCard[cardIndexOne].cardValue
-            };
-
-            //remove the card in order to get same value card at short time.
-            deck.allCard.RemoveAt(cardIndexOne);
-            return cardOne;
-        }
 
     }
 }

@@ -6,7 +6,6 @@ namespace CardGame_Mao
 {
     class Player : Game
     {
-        public String pName;
         public int playerNumber;
         public String houseName = "House";
 

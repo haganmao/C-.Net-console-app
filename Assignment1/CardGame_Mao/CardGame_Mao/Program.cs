@@ -35,7 +35,7 @@ namespace CardGame_Mao
                         {
                             Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
                         }
-                        Console.Write(item.totalScore);
+                        Console.Write(" -> " + item.totalScore);
                         Console.WriteLine();
                     }
                     else
@@ -56,6 +56,7 @@ namespace CardGame_Mao
                             }
                             p++;
                         }
+
                         // Console.Write(item.totalScore);
                         Console.WriteLine();
 
@@ -70,7 +71,7 @@ namespace CardGame_Mao
                     if (!item.isHouse)
                     {
                         choose = "y";
-                        Console.WriteLine(item.playerName + ":do you want card?");
+                        Console.WriteLine(item.playerName + " do you want card(y or n)?");
                         choose = Console.ReadLine();
                         while (item.totalScore <= 21 && choose == "y")
                         {
@@ -92,11 +93,12 @@ namespace CardGame_Mao
 
                                 Console.WriteLine();
                                 Console.Write(item.playerName + ": ");
+
                                 foreach (var c in item.totalCard)
                                 {
-                                    Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
+                                    Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " -> ");
                                 }
-                                Console.Write(item.totalScore);
+                                Console.Write(" -> " + item.totalScore);
                                 Console.WriteLine();
                             }
                             else
@@ -107,7 +109,7 @@ namespace CardGame_Mao
                             {
                                 break;
                             }
-                            Console.WriteLine(item.playerName + ":do you want card?");
+                            Console.WriteLine(item.playerName + " do you want card(y or n)?");
                             choose = Console.ReadLine();
                         }
                     }
@@ -133,7 +135,7 @@ namespace CardGame_Mao
                             Console.Write(item.playerName + ": ");
                             foreach (var c in item.totalCard)
                             {
-                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
+                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " -> ");
                             }
                             Console.Write(item.totalScore);
                             houseScores = item.totalScore;
@@ -155,9 +157,9 @@ namespace CardGame_Mao
                             Console.Write(item.playerName + ": ");
                             foreach (var c in item.totalCard)
                             {
-                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " ");
+                                Console.Write(str[(int)c.cardValue] + " " + (c.cardShape).ToString() + " -> ");
                             }
-                            Console.Write(item.totalScore);
+                            Console.Write(" -> " + item.totalScore);
                             Console.WriteLine();
                         }
 
@@ -171,46 +173,27 @@ namespace CardGame_Mao
                     {
                         if (item.totalScore > 21)
                         {
-                            Console.WriteLine(item.playerName + " Loses!");
+                            Console.WriteLine(item.playerName + " ->  Loses!");
                         }
                         else if (houseScores > 21)
                         {
-                            Console.WriteLine(item.playerName + " Wins!");
+                            Console.WriteLine(item.playerName + " ->  Wins!");
                         }
                         else if (item.totalScore > houseScores)
                         {
-                            Console.WriteLine(item.playerName + " Wins!");
+                            Console.WriteLine(item.playerName + " ->  Wins!");
                         }
                         else if (item.totalScore == houseScores)
                         {
-                            Console.WriteLine(item.playerName + " Ties!");
+                            Console.WriteLine(item.playerName + " -> Ties!");
                         }
                         else if (item.totalScore < houseScores)
                         {
-                            Console.WriteLine(item.playerName + "Loses!");
+                            Console.WriteLine(item.playerName + " -> Loses!");
                         }
                     }
                 }
 
-
-
-                // Console.WriteLine("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-                //deckA.createDeck();
-                // foreach (var item in deckA.allCard)
-                // {
-                //     Console.WriteLine(item.cardValue);
-                //     Console.WriteLine(item.cardShape);
-                // }
-
-                // Console.WriteLine("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-                // deckA.shuffle();
-                // foreach (var item in deckA.allCard)
-                // {
-                //     Console.WriteLine(item.cardShape);
-                //     Console.WriteLine(item.cardShape);
-                // }
-
-                // Console.ReadKey();
                 Console.WriteLine("Do you want to continue playing?(y/n)");
                 chooseAgain = Console.ReadLine();
             } while (chooseAgain == "y");

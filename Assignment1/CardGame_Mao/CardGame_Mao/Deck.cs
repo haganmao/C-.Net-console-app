@@ -46,5 +46,32 @@ namespace CardGame_Mao
                 allCard[index] = temp;
             }
         }
+
+
+        
+        //deal one card
+        public Card dealCard()
+        {
+            Random random = new Random(Guid.NewGuid().GetHashCode());
+            Deck deck = new Deck();
+
+            deck.createDeck();
+            deck.shuffle();
+
+
+            //Random get index
+            int cardIndexOne = random.Next(0, deck.allCard.Count);
+
+            //Create an new card
+            Card cardOne = new Card
+            {
+                cardShape = deck.allCard[cardIndexOne].cardShape,
+                cardValue = deck.allCard[cardIndexOne].cardValue
+            };
+
+            //remove the card in order to get same value card at short time.
+            deck.allCard.RemoveAt(cardIndexOne);
+            return cardOne;
+        }
     }
 }
