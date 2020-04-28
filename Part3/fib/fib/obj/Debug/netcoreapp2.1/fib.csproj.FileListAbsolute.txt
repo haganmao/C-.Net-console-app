@@ -1,0 +1,11 @@
+C:\Users\Meng\Desktop\fib\fib\bin\Debug\netcoreapp2.1\fib.deps.json
+C:\Users\Meng\Desktop\fib\fib\bin\Debug\netcoreapp2.1\fib.runtimeconfig.json
+C:\Users\Meng\Desktop\fib\fib\bin\Debug\netcoreapp2.1\fib.runtimeconfig.dev.json
+C:\Users\Meng\Desktop\fib\fib\bin\Debug\netcoreapp2.1\fib.dll
+C:\Users\Meng\Desktop\fib\fib\bin\Debug\netcoreapp2.1\fib.pdb
+C:\Users\Meng\Desktop\fib\fib\obj\Debug\netcoreapp2.1\fib.csprojAssemblyReference.cache
+C:\Users\Meng\Desktop\fib\fib\obj\Debug\netcoreapp2.1\fib.csproj.CoreCompileInputs.cache
+C:\Users\Meng\Desktop\fib\fib\obj\Debug\netcoreapp2.1\fib.AssemblyInfoInputs.cache
+C:\Users\Meng\Desktop\fib\fib\obj\Debug\netcoreapp2.1\fib.AssemblyInfo.cs
+C:\Users\Meng\Desktop\fib\fib\obj\Debug\netcoreapp2.1\fib.dll
+C:\Users\Meng\Desktop\fib\fib\obj\Debug\netcoreapp2.1\fib.pdb
