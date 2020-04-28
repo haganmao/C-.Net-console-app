@@ -12,13 +12,14 @@ namespace SD6502_Assignment1Part2_Task4_QiangZhang2173138
     {
         static void Main(string[] args)
         {
+            string yesContinue;
             string csvfile = Environment.CurrentDirectory;
             var path = Directory.GetParent(csvfile).Parent.FullName;
             var validcasespath = path+@"\datafile\TestInputsOutputs-(validcases).txt";
             var invalidcasespath = path + @"\datafile\TestInputsOutputs-(Invalidcases).txt";
 
 
-            while (true)
+            do
             {
                 Console.WriteLine("\nPlease select 1 or 2: ");
                 Console.WriteLine("1. Read valid Cases Display all in lower case.");
@@ -40,7 +41,7 @@ namespace SD6502_Assignment1Part2_Task4_QiangZhang2173138
                         for (int i = 0; i < validArrayEmailAddress.Length; i++)
                         {
                             validArrayEmailAddress[i] = validArrayEmailAddress[i].Replace("_at_", "@").Replace("_dot_", ".");
-                        } 
+                        }
 
                         foreach (string address in validArrayEmailAddress)
                         {
@@ -68,8 +69,9 @@ namespace SD6502_Assignment1Part2_Task4_QiangZhang2173138
                         }
                         break;
                 }
-
-            }
+                Console.WriteLine("\nDo you want to continue? (y/n)");
+                yesContinue = Console.ReadLine();
+            } while (yesContinue == "y") ;
         }
 
 

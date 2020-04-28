@@ -15,6 +15,7 @@ namespace SD6502_Assignment1Part2_Task3_QiangZhang2173138
             var firstname = new List<string>();
             var lastname = new List<string>();
             var email = new List<string>();
+            string yesContinue;
             string csvfile = Environment.CurrentDirectory;
             var getpath = Directory.GetParent(csvfile).Parent.FullName;
             getpath=getpath.Remove(getpath.IndexOf(@"\bin"));
@@ -40,7 +41,7 @@ namespace SD6502_Assignment1Part2_Task3_QiangZhang2173138
             var ArrayLastname = lastname.ToArray();
 
 
-            while (true)
+            do
             {
 
                 Console.WriteLine("Please select which sorting algorithm: ");
@@ -64,9 +65,8 @@ namespace SD6502_Assignment1Part2_Task3_QiangZhang2173138
                         }
                         watch.Stop();
                         Console.WriteLine($"Insertion Short Execution Time: {watch.ElapsedTicks} Ticks\n");
-                        Console.WriteLine("Test other aligorithm please press enter");
-                        Console.ReadLine();
                         break;
+
                     case "2":
                         var elapsedMs2 = watch.ElapsedMilliseconds;
                         watch.Reset();
@@ -78,8 +78,6 @@ namespace SD6502_Assignment1Part2_Task3_QiangZhang2173138
                         }
                         watch.Stop();
                         Console.WriteLine($"Bubble Short Execution Time: {watch.ElapsedTicks} Ticks\n");
-                        Console.WriteLine("Test other aligorithm please press enter");
-                        Console.ReadLine();
                         break;
 
                     case "3":
@@ -93,11 +91,13 @@ namespace SD6502_Assignment1Part2_Task3_QiangZhang2173138
                         }
                         watch.Stop();
                         Console.WriteLine($"Quick Short Execution Time: {watch.ElapsedTicks} Ticks\n");
-                        Console.WriteLine("Test other aligorithm please press enter");
-                        Console.ReadLine();
                         break;
-             }
-            }
+
+                }
+                Console.WriteLine("\nDo you want to continue to test other aligorithm? (y/n)");
+                yesContinue = Console.ReadLine();
+            } while (yesContinue == "y");    
+            
             
         }
 

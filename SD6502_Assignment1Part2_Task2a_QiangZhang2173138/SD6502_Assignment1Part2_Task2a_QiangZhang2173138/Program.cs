@@ -12,10 +12,12 @@ namespace SD6502_Assignment1Part2_Task2a_QiangZhang2173138
     {
         static void Main(string[] args)
         {
+            
             var watch = new Stopwatch();
             var firstname = new List<string>();
             var lastname = new List<string>();
             var email = new List<string>();
+            string yesContinue;
             string csvfile = Environment.CurrentDirectory;
             var getpath = Directory.GetParent(csvfile).Parent.FullName;
             var path = getpath+@"\datafile\unsorted_data.csv";
@@ -40,14 +42,14 @@ namespace SD6502_Assignment1Part2_Task2a_QiangZhang2173138
             var ArrayLastname = lastname.ToArray();
 
 
-            while (true)
+            do
             {
                 Console.WriteLine("Please Enter LastName for Search: ");
                 string searchname = Console.ReadLine();
 
                 watch.Reset();
                 watch.Start();
-                bool c=SeqSearch(ArrayLastname, searchname);
+                bool c = SeqSearch(ArrayLastname, searchname);
                 if (c)
                 {
                     Console.WriteLine("This student in the list");
@@ -56,7 +58,11 @@ namespace SD6502_Assignment1Part2_Task2a_QiangZhang2173138
                     Console.WriteLine("This student not in the list");
                 watch.Stop();
                 Console.WriteLine($"Sequential Search Execution Time: {watch.ElapsedTicks} Ticks\n");
-            }
+
+
+                Console.WriteLine("\nDo you want to continue? (y/n)");
+                yesContinue = Console.ReadLine();
+            } while (yesContinue == "y");
         }
 
         static bool SeqSearch(string[] arr, string sValue)

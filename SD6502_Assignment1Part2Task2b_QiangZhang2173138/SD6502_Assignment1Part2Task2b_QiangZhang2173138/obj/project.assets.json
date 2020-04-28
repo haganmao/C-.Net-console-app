@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\qiang\\Desktop\\Git\\C--Lab-Tasks\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138.csproj",
+      "projectUniqueName": "D:\\Studying T1 2020\\SD6502 Programming II\\Assignment1\\Summit\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138.csproj",
       "projectName": "SD6502_Assignment1Part2Task2b_QiangZhang2173138",
-      "projectPath": "C:\\Users\\qiang\\Desktop\\Git\\C--Lab-Tasks\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138.csproj",
+      "projectPath": "D:\\Studying T1 2020\\SD6502 Programming II\\Assignment1\\Summit\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138.csproj",
       "packagesPath": "C:\\Users\\qiang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\qiang\\Desktop\\Git\\C--Lab-Tasks\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\obj\\",
+      "outputPath": "D:\\Studying T1 2020\\SD6502 Programming II\\Assignment1\\Summit\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\SD6502_Assignment1Part2Task2b_QiangZhang2173138\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

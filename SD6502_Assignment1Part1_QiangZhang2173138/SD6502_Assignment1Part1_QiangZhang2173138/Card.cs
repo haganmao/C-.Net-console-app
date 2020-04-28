@@ -6,17 +6,31 @@ using System.Threading.Tasks;
 
 namespace SD6502_Assignment1Part1_QiangZhang2173138
 {
-    public class Card
+    class Card
     {
-        public Ranks Ranks { get; set; }
-        public Suits Suits { get; set; }
-        public bool IsfaceUp { get; set; }
 
-        public Card(Ranks ranks, Suits suits, bool isfaceUp)
+        public suit cardShape;
+        public rank cardValue;
+
+        public enum suit { Spade, Heart, Diamond, Club }
+        public enum rank { TWO = 0, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, J, Q, K, Ace }
+
+
+        //defaut constructor
+        public Card() { }
+
+        //constructor
+        public Card(suit cs, rank cv)
         {
-            Ranks = ranks;
-            Suits = suits;
-            IsfaceUp = isfaceUp;
+            cardShape = cs;
+            cardValue = cv;
         }
+
+
+        //methods
+        //accessor
+        public rank Rank { get; set; }
+        public suit Suit { get; set; }
+
     }
 }
