@@ -22,14 +22,14 @@
 
 
 ## Demo
-### valid booking with correct fields infomation
+### new booking with correct fields infomation
 ![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo1.JPG)
 <br>
 
-### valid booking with correct fields infomation
-![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo1.JPG)
+### validate customer name
+![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo2.JPG)
 <br>
 
-### valid booking with correct fields infomation
-![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo1.JPG)
+### validate blank fields, customer name and phone number must be entered
+![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo3.JPG)
 
