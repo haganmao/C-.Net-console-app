@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Booking>
+  <Booking ID="1">
+    <BookingID>1</BookingID>
+    <Name></Name>
+    <Phone></Phone>
+    <Num_People>0</Num_People>
+    <Date>Wednesday, 10 June 2020</Date>
+    <Time></Time>
+    <Table_Num></Table_Num>
+  </Booking>
+</Booking>

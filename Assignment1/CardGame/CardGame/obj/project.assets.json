@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meng\\Desktop\\CardGame\\CardGame\\CardGame.csproj",
+      "projectUniqueName": "C:\\Users\\Meng\\Desktop\\C--Lab-Tasks\\Assignment1\\CardGame\\CardGame\\CardGame.csproj",
       "projectName": "CardGame",
-      "projectPath": "C:\\Users\\Meng\\Desktop\\CardGame\\CardGame\\CardGame.csproj",
+      "projectPath": "C:\\Users\\Meng\\Desktop\\C--Lab-Tasks\\Assignment1\\CardGame\\CardGame\\CardGame.csproj",
       "packagesPath": "C:\\Users\\Meng\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Meng\\Desktop\\CardGame\\CardGame\\obj\\",
+      "outputPath": "C:\\Users\\Meng\\Desktop\\C--Lab-Tasks\\Assignment1\\CardGame\\CardGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
