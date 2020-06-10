@@ -56,6 +56,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtBookingID = new System.Windows.Forms.TextBox();
             this.comboTime = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPeople)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -121,7 +122,9 @@
             // dateTimePicker1
             // 
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Value = new System.DateTime(2020, 6, 24, 23, 59, 59, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // comboboxTableNumber
@@ -134,7 +137,17 @@
             // numPeople
             // 
             resources.ApplyResources(this.numPeople, "numPeople");
+            this.numPeople.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numPeople.Name = "numPeople";
+            this.numPeople.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numPeople.ValueChanged += new System.EventHandler(this.numPeople_ValueChanged);
             // 
             // btnnew
@@ -181,6 +194,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.RowTemplate.ReadOnly = true;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -215,10 +229,17 @@
             resources.ApplyResources(this.comboTime, "comboTime");
             this.comboTime.Name = "comboTime";
             // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.comboTime);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtBookingID);
@@ -278,12 +299,13 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtSeacrchName;
-        private System.Windows.Forms.DataGridView;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Data.DataSet dataSet1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtBookingID;
         private System.Windows.Forms.ComboBox comboTime;
+        private System.Windows.Forms.Label label11;
     }
 }
 

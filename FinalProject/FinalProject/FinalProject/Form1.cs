@@ -29,7 +29,7 @@ namespace FinalProject
             try
             {
                 dataGridView1.DataSource = mybooking.Tables[0];
-                
+                dataGridView1.Columns[7].Visible = false;
             }
             catch (System.Exception)
             {
@@ -37,8 +37,9 @@ namespace FinalProject
             }
         }
 
+
         //add item to 
-        private void Form1_Load_1(object sender, EventArgs e)
+        protected void Form1_Load_1(object sender, EventArgs e)
         {
             comboboxTableNumber.Items.Add("A01 table for 2");
             comboboxTableNumber.Items.Add("A02 table for 2");
@@ -80,19 +81,20 @@ namespace FinalProject
             }
             
             dataGridView1.SelectionMode = DataGridViewSelectionMode.CellSelect;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightYellow;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Blue;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.IndianRed;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            
         }
+
+
+
+
+
 
         //show bookings with details in table 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
             bookingID = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            dataGridView1.Columns[7].Visible = false;
-
             XElement data = XElement.Load(xmlPath);
             IEnumerable<XElement> elements = from bookingInfo in data.Elements("Booking")
                                              where bookingInfo.Attribute("ID").Value == bookingID
@@ -111,30 +113,46 @@ namespace FinalProject
 
 
 
-
-
         //add 
         private void button2_Click(object sender, EventArgs e)
         {
             XElement data = XElement.Load(xmlPath);
             IEnumerable<XElement> elementsAdd = from element in data.Elements("Booking")
                                              select element;
-
-            string str = (Convert.ToInt32(elementsAdd.Max(element => element.Attribute("ID").Value)) + 1).ToString("0");
+            int i = 0;
+            string str = (Convert.ToInt32(elementsAdd.Max(element => element.Attribute("ID").Value)) + (i+1)).ToString("00");
             string strOne = str;
-            XElement booking = new XElement(
+            try
+            {
+
+                XElement booking = new XElement(
                 "Booking",new XAttribute("ID",str),
-                           new XElement("BookingID", strOne),
-                           new XElement("Name",txtname.Text),
-                           new XElement("Phone",txtPhone.Text),                       
-                           new XElement("Num_People",numPeople.Text),
-                           new XElement("Date",dateTimePicker1.Text),
-                           new XElement("Time", comboTime.Text),
-                           new XElement("Table_Num",comboboxTableNumber.Text)               
+                            new XElement("BookingID", str),
+                            new XElement("Name",txtname.Text),
+                            new XElement("Phone",txtPhone.Text),                       
+                            new XElement("Num_People",numPeople.Text),
+                            new XElement("Date",dateTimePicker1.Text),
+                            new XElement("Time", comboTime.Text),
+                            new XElement("Table_Num",comboboxTableNumber.Text)               
                 );
-            data.Add(booking);
-            data.Save(xmlPath);
-            loadXmlFile();
+
+                if (txtname.Text != "" && txtPhone.Text != "") { 
+
+                    data.Add(booking);
+                    data.Save(xmlPath);
+                    loadXmlFile();
+                }
+                else {
+                    MessageBox.Show("Please enter all blank fileds, then click Add Button!Thank you");
+                }
+
+            }
+            catch (System.Exception)
+            {
+
+            }
+
+           
         }
 
 
@@ -167,7 +185,6 @@ namespace FinalProject
             loadXmlFile();
         }
 
-
         //delete
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -184,7 +201,7 @@ namespace FinalProject
             MessageBox.Show("Selected Booking has Deleted");
             loadXmlFile();
         }
-        
+
 
         //search
         private void btnSearch_Click(object sender, EventArgs e)
@@ -192,29 +209,14 @@ namespace FinalProject
             if (txtSeacrchName.Text != "")
             {
                 Name = txtSeacrchName.Text;
-                XElement data = XElement.Load(xmlPath);
-                IEnumerable<XElement> elements = from bookingInfo in data.Elements("Booking")
-                                                 where bookingInfo.Element("Name").Value == Name
-                                                 select bookingInfo;
-                foreach (XElement element in elements)
-                {
-                    txtBookingID.Text = bookingID;
-                    txtBookingID.Text = element.Attribute("ID").Value;
-                    txtname.Text = element.Element("Name").Value;
-                    txtPhone.Text = element.Element("Phone").Value;
-                    numPeople.Text = element.Element("Num_People").Value;
-                    dateTimePicker1.Text = element.Element("Date").Value;
-                    comboTime.Text = element.Element("Time").Value;
-                    comboboxTableNumber.Text = element.Element("Table_Num").Value;
-                }
+                
+
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    string s = dataGridView1.Rows[i].Cells[6].Value.ToString();
-                    
+                    string s = dataGridView1.Rows[i].Cells[1].Value.ToString();
                     if (s == Name)
                     {
-                        
-                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightYellow;
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightCyan;
                         dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.Red;
                     }
                     else
@@ -243,10 +245,34 @@ namespace FinalProject
         private void txtname_TextChanged(object sender, EventArgs e)
         {
 
+            //check customer name must be starting with a character 
+            if (this.txtname.Text.Length <= 1)
+            {
+                foreach (char ch in this.txtname.Text)
+                {
+                    if (char.IsDigit(ch))
+                    {
+                        MessageBox.Show("Please Enter a valid Name, starting with character Only!" + '\n'+ "Enter exp: MAO or Qiang!");
+                    }
+                    
+                }
+            }
         }
 
         private void txtPhone_TextChanged(object sender, EventArgs e)
         {
+            //check phone number must be numbers
+            if (this.txtPhone.Text.Length <= txtPhone.Text.Length)
+            {
+                foreach (char ch in this.txtPhone.Text)
+                {
+                    if (char.IsLetter(ch))
+                    {                    
+                        MessageBox.Show("Please Enter a valid number, Enter exp: 02240147800");
+                    }
+
+                }
+            }
 
         }
 
@@ -257,7 +283,8 @@ namespace FinalProject
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            dateTimePicker1.MinDate = DateTime.Now;
+            
         }
 
 
@@ -298,6 +325,11 @@ namespace FinalProject
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }

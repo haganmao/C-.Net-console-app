@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Booking>
+  <Booking ID="01">
+    <BookingID>01</BookingID>
+    <Name>MAO</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>2</Num_People>
+    <Date>Thursday, 11 June 2020</Date>
+    <Time>12:30</Time>
+    <Table_Num>A05 table for 2</Table_Num>
+  </Booking>
+  <Booking ID="02">
+    <BookingID>02</BookingID>
+    <Name>WAO</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>3</Num_People>
+    <Date>Wednesday, 10 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>A05 table for 2</Table_Num>
+  </Booking>
+  <Booking ID="03">
+    <BookingID>03</BookingID>
+    <Name>ANG</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>3</Num_People>
+    <Date>Wednesday, 10 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>A05 table for 2</Table_Num>
+  </Booking>
+  <Booking ID="04">
+    <BookingID>04</BookingID>
+    <Name>LUO</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Wednesday, 10 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>A05 table for 2</Table_Num>
+  </Booking>
+  <Booking ID="05">
+    <BookingID>05</BookingID>
+    <Name>LIANG</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Friday, 12 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="06">
+    <BookingID>06</BookingID>
+    <Name>HUANG</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Friday, 12 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="07">
+    <BookingID>07</BookingID>
+    <Name>GAO</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Saturday, 13 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="08">
+    <BookingID>08</BookingID>
+    <Name>LIU</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>6</Num_People>
+    <Date>Saturday, 13 June 2020</Date>
+    <Time>12:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="09">
+    <BookingID>09</BookingID>
+    <Name>ZHANG</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Sunday, 14 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="10">
+    <BookingID>10</BookingID>
+    <Name>CHENG</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Monday, 15 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="11">
+    <BookingID>11</BookingID>
+    <Name>LIU2</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Friday, 12 June 2020</Date>
+    <Time>13:00</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+  <Booking ID="12">
+    <BookingID>12</BookingID>
+    <Name>QIANG</Name>
+    <Phone>0224004714</Phone>
+    <Num_People>5</Num_People>
+    <Date>Saturday, 13 June 2020</Date>
+    <Time>17:30</Time>
+    <Table_Num>C03 table for 6</Table_Num>
+  </Booking>
+</Booking>
