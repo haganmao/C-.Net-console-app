@@ -22,4 +22,5 @@
 
 
 ## Demo
-![]('')
+
+![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo1.JPG)
