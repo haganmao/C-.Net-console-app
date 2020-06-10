@@ -19,6 +19,8 @@
 *	Check phone number 
 *	Check customer name
 *	Check blank field(customer name and phone number only)
+*	Ascending or Descending Booking ID, Name, Phone, Num_People,Date, Table_Num
+
 
 
 ## Demo
@@ -34,6 +36,6 @@
 ![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo3.JPG)
 <br>
 
-### validated booking information with massiva dataset by acsending Date
+### validated booking information with massive dataset by acsending Date
 ![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo4.JPG)
 
