@@ -36,14 +36,10 @@
 <br>
 
 ![d3](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo3.JPG "demo3")
-
 ### booking history searching by customer name
 <br>
 <br>
 ![d4](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo4.JPG "demo4")
-<br>
-<br>
-
 ### validated booking information with massive dataset by acsending Date
 
 
