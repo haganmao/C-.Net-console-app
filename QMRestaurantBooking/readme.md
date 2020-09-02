@@ -24,6 +24,12 @@
 
 
 ## Demo
+
+![d1](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo1.JPG "demo1") 
+
+
+
+
 ### new booking with correct fields infomation
 ![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo1.JPG)
 <br>
@@ -40,7 +46,8 @@
 ![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo4.JPG)
 
 <br>
-
+<br>
+<br>
 ## Code
 
 'XML file loading'
