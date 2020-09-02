@@ -26,24 +26,26 @@
 ## Demo
 
 ![d1](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo1.JPG "demo1") 
-
-
-
-
 ### new booking with correct fields infomation
-![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo1.JPG)
+<br>
 <br>
 
+![d2](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo2.JPG "demo2")
 ### validate customer name
-![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo2.JPG)
 <br>
+<br>
+
+![d3](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo3.JPG "demo3")
 
 ### booking history searching by customer name
-![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo3.JPG)
+<br>
+<br>
+![d4](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo4.JPG "demo4")
+<br>
 <br>
 
 ### validated booking information with massive dataset by acsending Date
-![](https://github.com/haganmao/C--Lab-Tasks/blob/master/FinalProject/demo4.JPG)
+
 
 <br>
 <br>
