@@ -39,13 +39,13 @@
 ### booking history searching by customer name
 <br>
 <br>
+
 ![d4](https://github.com/haganmao/C-.Net-console-app/blob/master/QMRestaurantBooking/demo4.JPG "demo4")
 ### validated booking information with massive dataset by acsending Date
 
+<br>
+<br>
 
-<br>
-<br>
-<br>
 ## Code
 
 'XML file loading'
